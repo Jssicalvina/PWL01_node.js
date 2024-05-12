@@ -1,0 +1,194 @@
+:root {
+    --black-900: #292929;
+    --black-800: #4B4B4B;
+    --black-700: #6A6A6A;
+    --black-600: #7F7F7F;
+    --black-500: #A9A9A9;
+    --black-400: #C7C7C7;
+    --black-300: #E9E9E9;
+    --black-200: #F2F2F2;
+    --black-100: #F7F7F7;
+    --black-50: #FFFFFF;
+
+    --neon: #DDFF00;
+}
+
+body {
+    font-family: 'Poppins';font-size: 22px;
+    background-color: var(--black-5 0);
+}
+
+a {
+    text-decoration: none; 
+    color: var(--black-50);
+}
+
+/* ===== SIDEBAR =============================================== */
+#sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    float: left;
+    background-color: var(--black-900);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+#header-sidebar {
+    padding: 10px 0 15px 0; 
+    margin-top: 10px;
+    color: var(--black-50);
+}
+
+#body-sidebar {
+    padding: 7px 15px 0px 15px; 
+    margin-top: 0px;
+}
+
+.bg-menu {
+    padding: 15px 20px 15px 20px;
+    margin: 0 7px 0 7px;
+    border-radius: 40px;
+    background-color: var(--black-50);
+    
+    color: var(--black-900);
+    font-size: 15px;
+}
+
+.bg-menu:hover{
+    background-color: #FFB1B1;
+}
+
+.bg-sub-menu {
+    padding: 15px 20px 13px 20px;
+    margin: 0 10px 0px -31px;
+    border-radius: 40px;
+    background-color: var(--black-700);
+    width: 120%;
+    color: var(--black-50);
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+#content-footer {
+    width: 100%;
+    height: 200px;
+    padding: 7px;
+    background-color: var(--black-200);
+    border-radius: 15px;
+}
+
+#icon {
+    width: 20px;
+    margin-bottom: 4px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+/* ===== END SIDEBAR ============================================ */
+
+
+/* ===== NAVBAR ================================================= */
+#navbar {
+    /* border: 1px solid black; */
+    /* background-color: red; */
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 65px;
+    background-color: var(--black-900);
+    /* margin-left: 0px;
+    margin-top: 0px; */
+
+    padding-left: 250px;
+    /* padding-right:0px; */
+    padding-top: 22px;
+}
+
+#hai-name {
+    /* padding-left: 20px;
+    padding-top: 13px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    border-radius: 50px;
+    background-color: var(--black-50); */
+    color:#FFB1B1;
+}
+
+#administration {
+    padding-left: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 10px;
+
+    margin-top: -8px;
+    margin-right: 25px;
+    border-radius: 50px;
+    background-color: #FFB1B1;
+    color: var(--black-900);
+    font-weight: 600;   
+}
+
+#dropdown-administration {
+    width: 16%; 
+    background-color: var(--black-50);
+    color: var(--black-900);
+    border-radius: 20px;
+}
+
+/* ===== END NAVBAR ============================================= */
+
+
+/* ===== MAIN =================================================== */
+#main-content {
+    width: 100%;
+    height: 100%;
+    position: static;
+    margin-top: 87px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* ===== END MAIN =============================================== */
+
+
+/* ===== DASHBOARD ============================================== */
+#content {
+    max-width: 100%;
+    height: 100%;
+    position: static;
+    background-color: var(--black-50);
+    margin-left: 230px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* ===== END DASHBOARD ========================================== */
+
+
+/* ===== UNIVERSAL MODAL ===== */
+.modal::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.231); /* Adjust the opacity to control the blur effect */
+    backdrop-filter: blur(5px); /* Adjust the blur amount */
+    z-index: -1;
+}
+
+.modal .modal-content {
+    border-radius: 10px;
+}
